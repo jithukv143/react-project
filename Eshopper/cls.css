@@ -1,0 +1,60 @@
+body
+{
+    margin: 20;
+    padding: 0;
+
+}
+.btn
+{
+font-family: arial;
+text-transform: uppercase;
+font-size: 17px;
+width: 100px;
+height: 40px;
+border-radius: 90px;
+line-height:20px;
+text-align:center;
+display: black;
+text-decoration:none;
+margin:1px auto;
+color:#000202;
+border: dashed rgb(0, 0, 0);
+position: relative;
+overflow: hidden;
+background: transparent;
+transition: .3s;
+
+}
+
+.btn:before
+{
+content: '';
+width: 100%;
+height: 100%;
+position: absolute;
+background: #000000;
+top: -100%;
+left: 0;
+z-index: -1;
+transition: .3s;
+}
+
+.btn:after
+{
+content: '';
+width: 100%;
+height: 100%;
+position: absolute;
+background: #ffffff;
+top: -100%;
+left: 0;
+z-index: -1;
+transition: .3s;
+}
+.btn:hover
+{
+    color: #fff;
+}
+.btn:before::before{
+    top: 0;
+}
